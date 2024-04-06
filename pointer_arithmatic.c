@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+
+int main()
+
+{
+    int arr[6] = {11,21,51,101,111,121};
+    int *p =NULL, *q=NULL;
+    p=&(arr[0]);
+    q=&(arr[4]);
+
+    printf("%d  \n",*p);
+    printf("%d \n", *q);
+
+    p=p+2;
+    printf("%d \n",*p);
+    q=q-2;
+    printf("%d \n",*q);
+    return 0;
+}
